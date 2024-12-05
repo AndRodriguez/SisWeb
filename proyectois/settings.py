@@ -82,6 +82,7 @@ WSGI_APPLICATION = 'proyectois.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 #mysql://root:kRdWDhugLyrBOOEHADigShjdDEiaKqbg@junction.proxy.rlwy.net:33199/railway
+#mysql -hjunction.proxy.rlwy.net -uroot -pkRdWDhugLyrBOOEHADigShjdDEiaKqbg --port 33199 --protocol=TCP railway
 DATABASES = {
     'default': {
 	'ENGINE': 'django.db.backends.mysql',

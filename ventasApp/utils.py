@@ -8,6 +8,8 @@ from xhtml2pdf import pisa
 import openpyxl
 from openpyxl import load_workbook
 
+from proyectois.settings import BASE_DIR
+
 def render_to_pdf(template_src, context_dict={}):
     template = get_template(template_src)
     html = template.render(context_dict)
@@ -17,7 +19,8 @@ def render_to_pdf(template_src, context_dict={}):
         return HttpResponse(result.getvalue(), content_type='application/pdf')
 
     return None
-Ruta_excel = "D:/10mo/Tesis2/Postest.xlsx"
+#Ruta_excel = "D:/10mo/Tesis2/Postest.xlsx"
+Ruta_excel = os.path.join(BASE_DIR, 'Postest.xlsx')
 def iniciar_excel():
     if not os.path.exists(Ruta_excel):
         workbook = openpyxl.Workbook()
