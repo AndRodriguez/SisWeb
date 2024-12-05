@@ -81,14 +81,15 @@ WSGI_APPLICATION = 'proyectois.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+#mysql://root:kRdWDhugLyrBOOEHADigShjdDEiaKqbg@junction.proxy.rlwy.net:33199/railway
 DATABASES = {
     'default': {
 	'ENGINE': 'django.db.backends.mysql',
-	'NAME': 'test01',
+	'NAME': 'railway',
 	'USER': 'root',
-	'PASSWORD': '',
-	'HOST': 'localhost',
-	'PORT': '3306',
+	'PASSWORD': 'kRdWDhugLyrBOOEHADigShjdDEiaKqbg',
+	'HOST': 'junction.proxy.rlwy.net',
+	'PORT': '33199',
 	}
 }
 
