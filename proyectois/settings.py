@@ -30,6 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '.railway.app',
+    
 ]
 
 
@@ -46,6 +47,9 @@ INSTALLED_APPS = [
     'seguridadApp',
     'crispy_forms',
 ]
+
+
+CSRF_TRUSTED_ORIGINS = ["sisweb-production.up.railway.app"]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
